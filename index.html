@@ -71,8 +71,48 @@
                         </div>
                     </div>
                     <div class="hero-image">
-                        <div class="phone-mockup">
-                            <img src="assets/screenshots/dark/01-home.png" alt="Flip Unit app home screen showing six conversion categories: Cooking, Currency, Area, Distance, Temperature, and Weight" class="hero-screenshot">
+                        <div class="hero-phone-wrapper">
+                            <button class="hero-nav-btn hero-nav-prev" aria-label="Previous screenshot">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="phone-mockup">
+                                <img src="assets/screenshots/dark/01-home.png"
+                                     alt="Flip Unit app home screen showing six conversion categories: Cooking, Currency, Area, Distance, Temperature, and Weight"
+                                     class="hero-screenshot"
+                                     data-dark1="assets/screenshots/dark/01-home.png"
+                                     data-light1="assets/screenshots/light/01-home.png"
+                                     data-dark2="assets/screenshots/dark/02-conversion.png"
+                                     data-light2="assets/screenshots/light/02-conversion.png"
+                                     data-dark3="assets/screenshots/dark/03-unit-picker.png"
+                                     data-light3="assets/screenshots/light/03-unit-picker.png"
+                                     data-dark4="assets/screenshots/dark/04-cooking.png"
+                                     data-light4="assets/screenshots/light/04-cooking.png"
+                                     data-dark5="assets/screenshots/dark/05-history.png"
+                                     data-light5="assets/screenshots/light/05-history.png"
+                                     data-dark6="assets/screenshots/dark/06-settings.png"
+                                     data-light6="assets/screenshots/light/06-settings.png">
+                            </div>
+                            <button class="hero-nav-btn hero-nav-next" aria-label="Next screenshot">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M9 18l6-6-6-6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="hero-controls">
+                            <div class="hero-indicator" aria-live="polite">
+                                <span class="hero-current">1</span> / <span class="hero-total">6</span>
+                            </div>
+                            <div class="hero-theme-toggle" role="radiogroup" aria-label="Screenshot theme">
+                                <button class="hero-theme-btn active" data-theme="dark" role="radio" aria-checked="true">
+                                    Dark
+                                </button>
+                                <button class="hero-theme-btn" data-theme="light" role="radio" aria-checked="false">
+                                    Light
+                                </button>
+                                <div class="hero-theme-indicator"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -220,25 +260,12 @@
             <div class="container">
                 <div class="section-header">
                     <h2 id="screenshots-heading">See it in action</h2>
-                    <p class="section-subtitle">Clean, intuitive design in light and dark modes.</p>
+                    <p class="section-subtitle">Tap any screenshot to enlarge. All 6 screens at a glance.</p>
                 </div>
 
-                <!-- Screenshot Theme Toggle -->
-                <div class="screenshot-toggle-wrapper">
-                    <div class="screenshot-toggle" role="radiogroup" aria-label="Screenshot theme">
-                        <button class="toggle-btn active" data-theme="dark" role="radio" aria-checked="true">
-                            Dark
-                        </button>
-                        <button class="toggle-btn" data-theme="light" role="radio" aria-checked="false">
-                            Light
-                        </button>
-                        <div class="toggle-indicator"></div>
-                    </div>
-                </div>
-
-                <div class="screenshots-carousel">
-                    <div class="screenshots-track">
-                        <figure class="screenshot-item">
+                <div class="screenshots-grid">
+                    <figure class="screenshot-grid-item">
+                        <button class="screenshot-enlarge-btn" aria-label="Enlarge Home View screenshot">
                             <div class="phone-frame">
                                 <img src="assets/screenshots/dark/01-home.png"
                                      data-dark="assets/screenshots/dark/01-home.png"
@@ -246,9 +273,11 @@
                                      alt="Home screen showing all six conversion categories with Cooking and Currency as favorites"
                                      class="screenshot-img">
                             </div>
-                            <figcaption>Home View</figcaption>
-                        </figure>
-                        <figure class="screenshot-item">
+                        </button>
+                        <figcaption>Home View</figcaption>
+                    </figure>
+                    <figure class="screenshot-grid-item">
+                        <button class="screenshot-enlarge-btn" aria-label="Enlarge Live Conversion screenshot">
                             <div class="phone-frame">
                                 <img src="assets/screenshots/dark/02-conversion.png"
                                      data-dark="assets/screenshots/dark/02-conversion.png"
@@ -256,9 +285,11 @@
                                      alt="Currency conversion screen showing 25 British Pounds converting to 33.60 US Dollars"
                                      class="screenshot-img">
                             </div>
-                            <figcaption>Live Conversion</figcaption>
-                        </figure>
-                        <figure class="screenshot-item">
+                        </button>
+                        <figcaption>Live Conversion</figcaption>
+                    </figure>
+                    <figure class="screenshot-grid-item">
+                        <button class="screenshot-enlarge-btn" aria-label="Enlarge Unit Selection screenshot">
                             <div class="phone-frame">
                                 <img src="assets/screenshots/dark/03-unit-picker.png"
                                      data-dark="assets/screenshots/dark/03-unit-picker.png"
@@ -266,9 +297,11 @@
                                      alt="Unit picker showing organized metric and imperial sections"
                                      class="screenshot-img">
                             </div>
-                            <figcaption>Unit Selection</figcaption>
-                        </figure>
-                        <figure class="screenshot-item">
+                        </button>
+                        <figcaption>Unit Selection</figcaption>
+                    </figure>
+                    <figure class="screenshot-grid-item">
+                        <button class="screenshot-enlarge-btn" aria-label="Enlarge Smart Cooking screenshot">
                             <div class="phone-frame">
                                 <img src="assets/screenshots/dark/04-cooking.png"
                                      data-dark="assets/screenshots/dark/04-cooking.png"
@@ -276,9 +309,11 @@
                                      alt="Cooking conversion with ingredient-specific options"
                                      class="screenshot-img">
                             </div>
-                            <figcaption>Smart Cooking</figcaption>
-                        </figure>
-                        <figure class="screenshot-item">
+                        </button>
+                        <figcaption>Smart Cooking</figcaption>
+                    </figure>
+                    <figure class="screenshot-grid-item">
+                        <button class="screenshot-enlarge-btn" aria-label="Enlarge History screenshot">
                             <div class="phone-frame">
                                 <img src="assets/screenshots/dark/05-history.png"
                                      data-dark="assets/screenshots/dark/05-history.png"
@@ -286,9 +321,11 @@
                                      alt="Conversion history showing recent conversions"
                                      class="screenshot-img">
                             </div>
-                            <figcaption>History</figcaption>
-                        </figure>
-                        <figure class="screenshot-item">
+                        </button>
+                        <figcaption>History</figcaption>
+                    </figure>
+                    <figure class="screenshot-grid-item">
+                        <button class="screenshot-enlarge-btn" aria-label="Enlarge Settings screenshot">
                             <div class="phone-frame">
                                 <img src="assets/screenshots/dark/06-settings.png"
                                      data-dark="assets/screenshots/dark/06-settings.png"
@@ -296,12 +333,28 @@
                                      alt="Settings screen with theme and history options"
                                      class="screenshot-img">
                             </div>
-                            <figcaption>Settings</figcaption>
-                        </figure>
-                    </div>
+                        </button>
+                        <figcaption>Settings</figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
+
+        <!-- Screenshot Lightbox Modal -->
+        <div class="lightbox" id="screenshot-lightbox" role="dialog" aria-modal="true" aria-label="Enlarged screenshot" hidden>
+            <div class="lightbox-backdrop"></div>
+            <div class="lightbox-content">
+                <button class="lightbox-close" aria-label="Close enlarged view">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="lightbox-image-wrapper">
+                    <img src="" alt="" class="lightbox-img">
+                </div>
+                <p class="lightbox-caption"></p>
+            </div>
+        </div>
 
         <!-- Features Section -->
         <section id="features" class="features" aria-labelledby="features-heading">
