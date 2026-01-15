@@ -96,36 +96,9 @@
                 // Update hero screenshot
                 updateHeroScreenshot();
 
-                // Update all grid screenshots
-                updateGridScreenshots();
-
                 // Announce change to screen readers
-                announceToScreenReader(`Screenshots changed to ${theme} mode`);
+                announceToScreenReader(`Screenshot theme changed to ${theme} mode`);
             });
-        });
-    }
-
-    // ==========================================================================
-    // Grid Screenshots Theme Update
-    // ==========================================================================
-
-    const screenshotGridImages = document.querySelectorAll('.screenshots-grid .screenshot-img');
-
-    function updateGridScreenshots() {
-        screenshotGridImages.forEach(img => {
-            const newSrc = img.dataset[currentTheme];
-            if (newSrc) {
-                // Check for reduced motion preference
-                if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                    img.style.opacity = '0';
-                    setTimeout(() => {
-                        img.src = newSrc;
-                        img.style.opacity = '1';
-                    }, 150);
-                } else {
-                    img.src = newSrc;
-                }
-            }
         });
     }
 
