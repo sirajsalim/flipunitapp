@@ -1314,6 +1314,17 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-accent);
 }
 
+/* FAQ Section (Homepage) */
+.faq-section {
+    padding: var(--space-3xl) 0;
+    background: var(--color-background-alt);
+}
+
+.faq-section .faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 /* Accessibility Cards */
 .accessibility-features {
     display: grid;
