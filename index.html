@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Flip Unit - The unit converter for everyone on iOS. No ads, no tracking, just simple, fast conversions with full accessibility support.">
-    <meta name="keywords" content="unit converter, accessible unit converter, iOS unit converter, VoiceOver unit converter, metric to imperial, cooking conversions, currency converter">
+    <meta name="description" content="Flip Unit is the accessible unit converter for iPhone, Apple Watch, and Home Screen widgets. Twelve categories, live currency rates, no ads, no tracking.">
+    <meta name="keywords" content="unit converter, iPhone unit converter, Apple Watch unit converter, unit converter widget, lock screen widget, accessible unit converter, VoiceOver unit converter, metric to imperial, cooking conversions, currency converter, live exchange rates">
     <meta name="theme-color" content="#0a0a0a">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Flip Unit - The Unit Converter for Everyone">
-    <meta property="og:description" content="The unit converter built for everyone. No ads, no tracking, full accessibility support.">
+    <meta property="og:title" content="Flip Unit — The Unit Converter for Everyone">
+    <meta property="og:description" content="Twelve conversion categories on iPhone, Apple Watch, and your Home Screen. No ads, no tracking, full accessibility.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/screenshots/dark/01-home.png">
+    <meta property="og:image" content="assets/screenshots/iphone/home.png">
 
-    <title>Flip Unit - The Unit Converter for Everyone | iOS App</title>
+    <title>Flip Unit — Unit Converter for iPhone, Apple Watch &amp; Widgets</title>
 
     <!-- Preload critical assets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,9 +40,9 @@
                 </div>
                 <nav class="nav" role="navigation" aria-label="Main navigation">
                     <ul class="nav-list">
+                        <li><a href="#watch">Watch</a></li>
+                        <li><a href="#widgets">Widgets</a></li>
                         <li><a href="#categories">Categories</a></li>
-                        <li><a href="#screenshots">Screenshots</a></li>
-                        <li><a href="#features">Features</a></li>
                         <li><a href="#faq">FAQ</a></li>
                         <li><a href="support.html">Support</a></li>
                         <li><a href="#download" class="nav-cta">Download</a></li>
@@ -63,6 +63,13 @@
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
+                        <p class="hero-platforms" aria-label="Available on iPhone, Apple Watch, and as widgets">
+                            <span><svg class="platform-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><line x1="11" y1="18" x2="13" y2="18"/></svg>iPhone</span>
+                            <span class="dot" aria-hidden="true">·</span>
+                            <span><svg class="platform-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="7" y="6" width="10" height="12" rx="2"/><path d="M9 6V3h6v3" stroke-linecap="round"/><path d="M9 18v3h6v-3" stroke-linecap="round"/></svg>Apple Watch</span>
+                            <span class="dot" aria-hidden="true">·</span>
+                            <span><svg class="platform-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg>Widgets</span>
+                        </p>
                         <h1 id="hero-heading">The unit converter built for <span class="highlight">everyone</span></h1>
                         <p class="hero-subtitle">Designed with accessibility at its core, not as an afterthought. No ads, no tracking, no compromises.</p>
                         <div class="hero-cta">
@@ -78,49 +85,16 @@
                         </div>
                     </div>
                     <div class="hero-image">
-                        <div class="hero-phone-wrapper">
-                            <button class="hero-nav-btn hero-nav-prev" aria-label="Previous screenshot">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                    <path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <div class="phone-mockup">
-                                <img src="assets/screenshots/dark/01-home.png"
-                                     alt="Flip Unit app home screen showing six conversion categories: Cooking, Currency, Area, Distance, Temperature, and Weight"
-                                     class="hero-screenshot"
-                                     data-dark1="assets/screenshots/dark/01-home.png"
-                                     data-light1="assets/screenshots/light/01-home.png"
-                                     data-dark2="assets/screenshots/dark/02-conversion.png"
-                                     data-light2="assets/screenshots/light/02-conversion.png"
-                                     data-dark3="assets/screenshots/dark/03-unit-picker.png"
-                                     data-light3="assets/screenshots/light/03-unit-picker.png"
-                                     data-dark4="assets/screenshots/dark/04-cooking.png"
-                                     data-light4="assets/screenshots/light/04-cooking.png"
-                                     data-dark5="assets/screenshots/dark/05-history.png"
-                                     data-light5="assets/screenshots/light/05-history.png"
-                                     data-dark6="assets/screenshots/dark/06-settings.png"
-                                     data-light6="assets/screenshots/light/06-settings.png">
-                            </div>
-                            <button class="hero-nav-btn hero-nav-next" aria-label="Next screenshot">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                    <path d="M9 18l6-6-6-6" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="hero-controls">
-                            <div class="hero-indicator" aria-live="polite">
-                                <span class="hero-current">1</span> / <span class="hero-total">6</span>
-                            </div>
-                            <div class="hero-theme-toggle" role="radiogroup" aria-label="Screenshot theme">
-                                <button class="hero-theme-btn active" data-theme="dark" role="radio" aria-checked="true">
-                                    Dark
-                                </button>
-                                <button class="hero-theme-btn" data-theme="light" role="radio" aria-checked="false">
-                                    Light
-                                </button>
-                                <div class="hero-theme-indicator"></div>
+                        <div class="hero-watch-wrapper">
+                            <div class="hero-watch">
+                                <img src="assets/screenshots/watch/weight.png"
+                                     alt="Flip Unit on Apple Watch entering a weight conversion from kilograms to pounds">
                             </div>
                         </div>
+                        <img src="assets/screenshots/iphone/home.png"
+                             alt="Flip Unit on iPhone showing the home screen with twelve conversion categories"
+                             class="hero-iphone"
+                             width="280">
                     </div>
                 </div>
             </div>
@@ -168,14 +142,255 @@
             </div>
         </section>
 
+        <!-- iPhone Screenshots Section -->
+        <section id="screenshots" class="screenshots" aria-labelledby="screenshots-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="screenshots-heading">A closer look</h2>
+                    <p class="section-subtitle">Looks right in light and dark mode. Tap any screenshot to enlarge.</p>
+                </div>
+
+                <div class="screenshots-grid">
+                    <figure class="screenshot-grid-item">
+                        <button class="screenshot-enlarge-btn" aria-label="Enlarge Home screenshot">
+                            <div class="phone-frame">
+                                <img src="assets/screenshots/iphone/home.png"
+                                     alt="Home screen showing the search bar, Currency and Pressure favorites, and the full list of conversion categories"
+                                     class="screenshot-img">
+                            </div>
+                        </button>
+                        <figcaption>Home</figcaption>
+                    </figure>
+                    <figure class="screenshot-grid-item">
+                        <button class="screenshot-enlarge-btn" aria-label="Enlarge Live Currency screenshot">
+                            <div class="phone-frame">
+                                <img src="assets/screenshots/iphone/currency.png"
+                                     alt="Currency conversion showing 25 British Pounds equals 33.44 US Dollars with a numeric keypad"
+                                     class="screenshot-img">
+                            </div>
+                        </button>
+                        <figcaption>Live Currency</figcaption>
+                    </figure>
+                    <figure class="screenshot-grid-item">
+                        <button class="screenshot-enlarge-btn" aria-label="Enlarge Volume screenshot">
+                            <div class="phone-frame">
+                                <img src="assets/screenshots/iphone/volume.png"
+                                     alt="Volume conversion showing 1 US Gallon equals 3.785 liters"
+                                     class="screenshot-img">
+                            </div>
+                        </button>
+                        <figcaption>Volume</figcaption>
+                    </figure>
+                    <figure class="screenshot-grid-item">
+                        <button class="screenshot-enlarge-btn" aria-label="Enlarge Smart Cooking screenshot">
+                            <div class="phone-frame">
+                                <img src="assets/screenshots/iphone/cooking.png"
+                                     alt="Cooking unit picker organized into liquid and dry ingredient sections including Cup of Flour, Cup of Sugar, and Cup of Butter"
+                                     class="screenshot-img">
+                            </div>
+                        </button>
+                        <figcaption>Smart Cooking</figcaption>
+                    </figure>
+                    <figure class="screenshot-grid-item">
+                        <button class="screenshot-enlarge-btn" aria-label="Enlarge History screenshot">
+                            <div class="phone-frame">
+                                <img src="assets/screenshots/iphone/history.png"
+                                     alt="Conversion history showing recent conversions across Weight, Cooking, Distance, Currency, and Temperature"
+                                     class="screenshot-img">
+                            </div>
+                        </button>
+                        <figcaption>History</figcaption>
+                    </figure>
+                    <figure class="screenshot-grid-item">
+                        <button class="screenshot-enlarge-btn" aria-label="Enlarge Settings screenshot">
+                            <div class="phone-frame">
+                                <img src="assets/screenshots/iphone/settings.png"
+                                     alt="Settings screen with Theme, History Limit, and Rate App, Share App, and Send Feedback options"
+                                     class="screenshot-img">
+                            </div>
+                        </button>
+                        <figcaption>Settings</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshot Lightbox Modal -->
+        <div class="lightbox" id="screenshot-lightbox" role="dialog" aria-modal="true" aria-label="Enlarged screenshot" hidden>
+            <div class="lightbox-backdrop"></div>
+            <div class="lightbox-content">
+                <button class="lightbox-close" aria-label="Close enlarged view">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="lightbox-image-wrapper">
+                    <img src="" alt="" class="lightbox-img">
+                </div>
+                <p class="lightbox-caption"></p>
+            </div>
+        </div>
+
+        <!-- Apple Watch Section -->
+        <section id="watch" class="watch-section" aria-labelledby="watch-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="watch-heading">On your wrist</h2>
+                    <p class="section-subtitle">A native Apple Watch app with every category from your iPhone — including live currency, synced favorites, and one-tap complications.</p>
+                </div>
+
+                <div class="watch-faces-row">
+                    <figure class="watch-display">
+                        <div class="watch-display-wrapper">
+                            <div class="watch-display-frame">
+                                <img src="assets/screenshots/watch/categories.png"
+                                     alt="Apple Watch home screen showing the Flip Unit categories list with Currency, Pressure, and Area">
+                            </div>
+                        </div>
+                        <figcaption>All categories</figcaption>
+                    </figure>
+                    <figure class="watch-display">
+                        <div class="watch-display-wrapper">
+                            <div class="watch-display-frame">
+                                <img src="assets/screenshots/watch/weight.png"
+                                     alt="Apple Watch weight conversion entry, kilograms to pounds">
+                            </div>
+                        </div>
+                        <figcaption>Quick conversion</figcaption>
+                    </figure>
+                    <figure class="watch-display">
+                        <div class="watch-display-wrapper">
+                            <div class="watch-display-frame">
+                                <img src="assets/screenshots/watch/speed-units.png"
+                                     alt="Apple Watch unit picker showing Metres per Second, Kilometres per Hour, and Miles per Hour with Kilometres per Hour selected">
+                            </div>
+                        </div>
+                        <figcaption>Choose units</figcaption>
+                    </figure>
+                    <figure class="watch-display">
+                        <div class="watch-display-wrapper">
+                            <div class="watch-display-frame">
+                                <img src="assets/screenshots/watch/keypad.png"
+                                     alt="Apple Watch numeric keypad with the value 25 entered">
+                            </div>
+                        </div>
+                        <figcaption>Enter a value</figcaption>
+                    </figure>
+                </div>
+
+                <div class="watch-features">
+                    <article class="watch-feature">
+                        <h3>All 12 categories</h3>
+                        <p>Every conversion from the iPhone works the same way on your wrist.</p>
+                    </article>
+                    <article class="watch-feature">
+                        <h3>Live currency, synced</h3>
+                        <p>Exchange rates push automatically from your iPhone. The Watch never has to fetch them itself.</p>
+                    </article>
+                    <article class="watch-feature">
+                        <h3>Favorites in sync</h3>
+                        <p>Star a category on the phone — it appears at the top on the Watch, instantly.</p>
+                    </article>
+                    <article class="watch-feature">
+                        <h3>Haptic feedback</h3>
+                        <p>Every action confirms with a subtle tap. Useful when you can't look down.</p>
+                    </article>
+                </div>
+
+                <aside class="watch-complications" aria-label="Complications">
+                    <h3>Twelve complications, one per category</h3>
+                    <p>Add any category to your watch face as a complication. One tap goes straight into that converter — no app launch in between.</p>
+                </aside>
+
+                <p class="watch-requirements">Requires watchOS 10.6 or later</p>
+            </div>
+        </section>
+
+        <!-- Widgets Section -->
+        <section id="widgets" class="widgets-section" aria-labelledby="widgets-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="widgets-heading">On your Home Screen</h2>
+                    <p class="section-subtitle">Five widgets across three sizes — launchers for fast access and live currency rates that refresh automatically.</p>
+                </div>
+
+                <div class="widgets-hero">
+                    <img src="assets/screenshots/widgets/home-screen.png"
+                         alt="iPhone Home Screen showing all five Flip Unit widgets installed: two currency widgets at the top, a four-category launcher and the Pressure single-category launcher in the middle, and the six-category launcher at the bottom">
+                </div>
+
+                <div class="widgets-lineup">
+                    <figure class="widget-tile widget-small">
+                        <img src="assets/screenshots/widgets/launcher-1x.png"
+                             alt="Single-category widget showing the Pressure category launcher">
+                        <figcaption>Single category</figcaption>
+                    </figure>
+                    <figure class="widget-tile widget-small">
+                        <img src="assets/screenshots/widgets/launcher-4x.png"
+                             alt="Four-category widget showing Data, Volume, Area, and Fuel launchers in a two-by-two grid">
+                        <figcaption>Four-pack</figcaption>
+                    </figure>
+                    <figure class="widget-tile widget-medium">
+                        <img src="assets/screenshots/widgets/launcher-6x.png"
+                             alt="Six-category widget showing Distance, Weight, Temperature, Cooking, Currency, and Speed launchers in a three-by-two grid">
+                        <figcaption>Six-pack</figcaption>
+                    </figure>
+                    <figure class="widget-tile widget-small">
+                        <img src="assets/screenshots/widgets/currency-gbp-cny.png"
+                             alt="Currency widget showing 1 British Pound equals 9.24 Chinese Yuan, updated today">
+                        <figcaption>Live currency</figcaption>
+                    </figure>
+                </div>
+
+                <div class="widgets-callouts">
+                    <div class="widgets-callout">
+                        <h3>Always fresh</h3>
+                        <p>Currency rates refresh in the background — you don't need to open the app for the latest numbers to show up.</p>
+                    </div>
+                    <div class="widgets-callout">
+                        <h3>Lock Screen, too</h3>
+                        <p>Currency rates and category shortcuts work as Lock Screen widgets, above the clock or as inline accessories.</p>
+                    </div>
+                </div>
+
+                <p class="widgets-requirements">Widgets require iOS 18 or later</p>
+            </div>
+        </section>
+
         <!-- Categories Section -->
         <section id="categories" class="categories" aria-labelledby="categories-heading">
             <div class="container">
                 <div class="section-header">
-                    <h2 id="categories-heading">Six essential categories</h2>
+                    <h2 id="categories-heading">Twelve categories</h2>
                     <p class="section-subtitle">Everything you need, nothing you don't.</p>
                 </div>
                 <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-icon-wrapper" aria-hidden="true">
+                            <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="9" stroke-linecap="round"/>
+                                <path d="M12 6v2" stroke-linecap="round"/>
+                                <path d="M12 16v2" stroke-linecap="round"/>
+                                <path d="M9 9.5c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 1.5s-.5 1.5-2 2l-2 .5c-1.5.5-2 1-2 2s.9 2 2 2h2c1.1 0 2-.9 2-2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Currency</h3>
+                        <p>162+ currencies with live exchange rates. Works offline with cached rates.</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon-wrapper" aria-hidden="true">
+                            <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M6 20h12" stroke-linecap="round"/>
+                                <path d="M6 20c-1 0-2-1-2-2v-1c0-1 1-2 2-2h1" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18 20c1 0 2-1 2-2v-1c0-1-1-2-2-2h-1" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 15V9c0-1 .5-2 1.5-2.5L12 5l3.5 1.5c1 .5 1.5 1.5 1.5 2.5v6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 9h4" stroke-linecap="round"/>
+                                <path d="M10 12h4" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Cooking</h3>
+                        <p>Ingredient-specific conversions. Cups of flour to grams with accurate density.</p>
+                    </div>
                     <div class="category-card">
                         <div class="category-icon-wrapper" aria-hidden="true">
                             <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -209,6 +424,17 @@
                     <div class="category-card">
                         <div class="category-icon-wrapper" aria-hidden="true">
                             <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 3l9 5v8l-9 5-9-5V8z" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 8l9 5 9-5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 13v8" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Volume</h3>
+                        <p>Liters, gallons, pints, fluid ounces, and milliliters.</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon-wrapper" aria-hidden="true">
+                            <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                                 <rect x="4" y="4" width="16" height="16" rx="2" stroke-linecap="round"/>
                                 <path d="M4 9h16" stroke-linecap="round"/>
                                 <path d="M9 4v16" stroke-linecap="round"/>
@@ -235,128 +461,72 @@
                     <div class="category-card">
                         <div class="category-icon-wrapper" aria-hidden="true">
                             <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <circle cx="12" cy="12" r="9" stroke-linecap="round"/>
-                                <path d="M12 6v2" stroke-linecap="round"/>
-                                <path d="M12 16v2" stroke-linecap="round"/>
-                                <path d="M9 9.5c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 1.5s-.5 1.5-2 2l-2 .5c-1.5.5-2 1-2 2s.9 2 2 2h2c1.1 0 2-.9 2-2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 14a9 9 0 0 1 18 0" stroke-linecap="round"/>
+                                <path d="M12 14L8.5 10.5" stroke-linecap="round"/>
+                                <circle cx="12" cy="14" r="1.2" fill="currentColor"/>
+                                <path d="M6 18h12" stroke-linecap="round"/>
                             </svg>
                         </div>
-                        <h3>Currency</h3>
-                        <p>162+ currencies with live exchange rates. Works offline with cached rates.</p>
+                        <h3>Pressure</h3>
+                        <p>PSI, bar, atmospheres, pascals, and millibars.</p>
                     </div>
                     <div class="category-card">
                         <div class="category-icon-wrapper" aria-hidden="true">
                             <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M6 20h12" stroke-linecap="round"/>
-                                <path d="M6 20c-1 0-2-1-2-2v-1c0-1 1-2 2-2h1" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M18 20c1 0 2-1 2-2v-1c0-1-1-2-2-2h-1" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M7 15V9c0-1 .5-2 1.5-2.5L12 5l3.5 1.5c1 .5 1.5 1.5 1.5 2.5v6" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M10 9h4" stroke-linecap="round"/>
-                                <path d="M10 12h4" stroke-linecap="round"/>
+                                <circle cx="12" cy="12" r="9" stroke-linecap="round"/>
+                                <path d="M12 12L16.5 7.5" stroke-linecap="round"/>
+                                <circle cx="12" cy="12" r="1.4" fill="currentColor"/>
+                                <path d="M5 12h1.5M17.5 12H19M12 5v1.5" stroke-linecap="round"/>
                             </svg>
                         </div>
-                        <h3>Cooking</h3>
-                        <p>Ingredient-specific conversions. Cups of flour to grams with accurate density.</p>
+                        <h3>Speed</h3>
+                        <p>mph, km/h, knots, meters per second, and more.</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon-wrapper" aria-hidden="true">
+                            <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M13 3L4 14h7l-1 7 9-12h-7l1-6z" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Power</h3>
+                        <p>Watts, kilowatts, horsepower, and BTU per hour.</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon-wrapper" aria-hidden="true">
+                            <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="6" width="18" height="5" rx="1.5" stroke-linecap="round"/>
+                                <rect x="3" y="13" width="18" height="5" rx="1.5" stroke-linecap="round"/>
+                                <circle cx="6.5" cy="8.5" r="0.6" fill="currentColor"/>
+                                <circle cx="6.5" cy="15.5" r="0.6" fill="currentColor"/>
+                                <line x1="10" y1="8.5" x2="17" y2="8.5" stroke-linecap="round"/>
+                                <line x1="10" y1="15.5" x2="17" y2="15.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Data</h3>
+                        <p>Bytes, kilobytes, megabytes, gigabytes, and terabytes.</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon-wrapper" aria-hidden="true">
+                            <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 21h12V3H3v18z" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="3" y1="9" x2="15" y2="9" stroke-linecap="round"/>
+                                <path d="M15 8h2.5l2.5 2.5V18a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-7" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="9" cy="6" r="1" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>Fuel</h3>
+                        <p>Miles per gallon, liters per 100 km, and km per liter.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Screenshots Section -->
-        <section id="screenshots" class="screenshots" aria-labelledby="screenshots-heading">
-            <div class="container">
-                <div class="section-header">
-                    <h2 id="screenshots-heading">See it in action</h2>
-                    <p class="section-subtitle">Tap any screenshot to enlarge. All 6 screens at a glance.</p>
-                </div>
-
-                <div class="screenshots-grid">
-                    <figure class="screenshot-grid-item">
-                        <button class="screenshot-enlarge-btn" aria-label="Enlarge Home View screenshot">
-                            <div class="phone-frame">
-                                <img src="assets/screenshots/dark/01-home.png"
-                                     alt="Home screen showing all six conversion categories with Cooking and Currency as favorites"
-                                     class="screenshot-img">
-                            </div>
-                        </button>
-                        <figcaption>Home View</figcaption>
-                    </figure>
-                    <figure class="screenshot-grid-item">
-                        <button class="screenshot-enlarge-btn" aria-label="Enlarge Live Conversion screenshot">
-                            <div class="phone-frame">
-                                <img src="assets/screenshots/dark/02-conversion.png"
-                                     alt="Currency conversion screen showing 25 British Pounds converting to 33.60 US Dollars"
-                                     class="screenshot-img">
-                            </div>
-                        </button>
-                        <figcaption>Live Conversion</figcaption>
-                    </figure>
-                    <figure class="screenshot-grid-item">
-                        <button class="screenshot-enlarge-btn" aria-label="Enlarge Unit Selection screenshot">
-                            <div class="phone-frame">
-                                <img src="assets/screenshots/dark/03-unit-picker.png"
-                                     alt="Unit picker showing organized metric and imperial sections"
-                                     class="screenshot-img">
-                            </div>
-                        </button>
-                        <figcaption>Unit Selection</figcaption>
-                    </figure>
-                    <figure class="screenshot-grid-item">
-                        <button class="screenshot-enlarge-btn" aria-label="Enlarge Smart Cooking screenshot">
-                            <div class="phone-frame">
-                                <img src="assets/screenshots/dark/04-cooking.png"
-                                     alt="Cooking conversion with ingredient-specific options"
-                                     class="screenshot-img">
-                            </div>
-                        </button>
-                        <figcaption>Smart Cooking</figcaption>
-                    </figure>
-                    <figure class="screenshot-grid-item">
-                        <button class="screenshot-enlarge-btn" aria-label="Enlarge History screenshot">
-                            <div class="phone-frame">
-                                <img src="assets/screenshots/dark/05-history.png"
-                                     alt="Conversion history showing recent conversions"
-                                     class="screenshot-img">
-                            </div>
-                        </button>
-                        <figcaption>History</figcaption>
-                    </figure>
-                    <figure class="screenshot-grid-item">
-                        <button class="screenshot-enlarge-btn" aria-label="Enlarge Settings screenshot">
-                            <div class="phone-frame">
-                                <img src="assets/screenshots/dark/06-settings.png"
-                                     alt="Settings screen with theme and history options"
-                                     class="screenshot-img">
-                            </div>
-                        </button>
-                        <figcaption>Settings</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-
-        <!-- Screenshot Lightbox Modal -->
-        <div class="lightbox" id="screenshot-lightbox" role="dialog" aria-modal="true" aria-label="Enlarged screenshot" hidden>
-            <div class="lightbox-backdrop"></div>
-            <div class="lightbox-content">
-                <button class="lightbox-close" aria-label="Close enlarged view">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                        <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-                <div class="lightbox-image-wrapper">
-                    <img src="" alt="" class="lightbox-img">
-                </div>
-                <p class="lightbox-caption"></p>
-            </div>
-        </div>
-
-        <!-- Features Section -->
+        <!-- Why Flip Unit Section -->
         <section id="features" class="features" aria-labelledby="features-heading">
             <div class="container">
                 <div class="section-header">
-                    <h2 id="features-heading">Built different. Built better.</h2>
-                    <p class="section-subtitle">Every feature designed with purpose and accessibility in mind.</p>
+                    <h2 id="features-heading">Why Flip Unit</h2>
+                    <p class="section-subtitle">Every detail considered. Especially the small ones.</p>
                 </div>
                 <div class="features-grid">
                     <article class="feature-card">
@@ -395,8 +565,30 @@
                                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                             </svg>
                         </div>
-                        <h3>Fast & Efficient</h3>
+                        <h3>Fast &amp; Efficient</h3>
                         <p>Real-time conversions as you type. Conversion history, favorite categories, and smart search.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="9"></circle>
+                                <path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"></path>
+                            </svg>
+                        </div>
+                        <h3>Light or Dark Mode</h3>
+                        <p>Follows your system theme by default, or pick one. The app, the Watch, and every widget all match.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 12a9 9 0 0 1 15.5-6.3" stroke-linecap="round"/>
+                                <path d="M21 12a9 9 0 0 1-15.5 6.3" stroke-linecap="round"/>
+                                <path d="M21 3v6h-6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 21v-6h6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Always Fresh</h3>
+                        <p>Currency rates refresh automatically in the background. Widgets and the Watch stay current without ever opening the app.</p>
                     </article>
                 </div>
             </div>
@@ -446,25 +638,6 @@
             </div>
         </section>
 
-        <!-- Download CTA Section -->
-        <section id="download" class="download-cta" aria-labelledby="download-heading">
-            <div class="container">
-                <div class="cta-content">
-                    <h2 id="download-heading">Ready to convert smarter?</h2>
-                    <p>Download Flip Unit free on the App Store. No subscriptions, no hidden costs.</p>
-                    <a href="https://apps.apple.com/app/id6757921823" class="app-store-badge" aria-label="Download Flip Unit on the App Store">
-                        <svg viewBox="0 0 120 40" aria-hidden="true">
-                            <rect width="120" height="40" rx="6" fill="#fff"/>
-                            <path fill="#000" d="M24.769 20.3a4.949 4.949 0 012.356-4.151 5.066 5.066 0 00-3.99-2.158c-1.68-.176-3.308 1.005-4.164 1.005-.872 0-2.19-.988-3.608-.958a5.315 5.315 0 00-4.473 2.728c-1.934 3.348-.491 8.269 1.361 10.976.927 1.325 2.01 2.805 3.428 2.753 1.387-.058 1.905-.885 3.58-.885 1.658 0 2.144.885 3.591.852 1.489-.025 2.426-1.332 3.32-2.67a10.962 10.962 0 001.52-3.092 4.782 4.782 0 01-2.92-4.4zM22.037 12.21a4.872 4.872 0 001.115-3.49 4.957 4.957 0 00-3.208 1.66 4.636 4.636 0 00-1.144 3.36 4.1 4.1 0 003.237-1.53z"/>
-                            <path fill="#000" d="M42.302 27.14h-4.733l-1.137 3.356h-2.005l4.484-12.418h2.083l4.483 12.418h-2.039zm-4.243-1.55h3.752l-1.85-5.446h-.051zM55.16 25.97c0 2.813-1.506 4.62-3.779 4.62a3.07 3.07 0 01-2.848-1.583h-.043v4.484h-1.86V21.442h1.8v1.506h.034a3.212 3.212 0 012.883-1.6c2.298 0 3.813 1.816 3.813 4.622zm-1.91 0c0-1.833-.948-3.038-2.393-3.038-1.42 0-2.375 1.23-2.375 3.038 0 1.824.955 3.046 2.375 3.046 1.445 0 2.393-1.197 2.393-3.046zM65.125 25.97c0 2.813-1.506 4.62-3.779 4.62a3.07 3.07 0 01-2.848-1.583h-.043v4.484h-1.859V21.442h1.799v1.506h.034a3.212 3.212 0 012.883-1.6c2.298 0 3.813 1.816 3.813 4.622zm-1.91 0c0-1.833-.948-3.038-2.393-3.038-1.42 0-2.375 1.23-2.375 3.038 0 1.824.955 3.046 2.375 3.046 1.445 0 2.393-1.197 2.393-3.046zM71.71 27.036c.138 1.232 1.335 2.04 2.97 2.04 1.566 0 2.693-.808 2.693-1.919 0-.964-.68-1.54-2.29-1.936l-1.609-.388c-2.28-.55-3.339-1.617-3.339-3.348 0-2.142 1.867-3.614 4.519-3.614 2.624 0 4.423 1.472 4.483 3.614h-1.876c-.112-1.239-1.137-1.987-2.634-1.987s-2.521.757-2.521 1.858c0 .878.654 1.395 2.255 1.79l1.368.336c2.548.603 3.606 1.626 3.606 3.443 0 2.323-1.85 3.778-4.793 3.778-2.754 0-4.614-1.42-4.734-3.667zM83.346 19.3v2.142h1.722v1.472h-1.722v4.991c0 .776.345 1.137 1.102 1.137.204-.004.408-.018.611-.043v1.463a5.104 5.104 0 01-1.032.086c-1.833 0-2.548-.689-2.548-2.444v-5.19h-1.316v-1.472h1.316V19.3zM86.065 25.97c0-2.849 1.678-4.639 4.294-4.639 2.625 0 4.295 1.79 4.295 4.639 0 2.856-1.661 4.638-4.295 4.638-2.633 0-4.294-1.782-4.294-4.638zm6.695 0c0-1.954-.895-3.108-2.401-3.108s-2.4 1.162-2.4 3.108c0 1.962.894 3.106 2.4 3.106s2.401-1.144 2.401-3.106zM96.186 21.442h1.773v1.541h.043a2.16 2.16 0 012.177-1.635 2.866 2.866 0 01.637.069v1.738a2.598 2.598 0 00-.835-.112 1.873 1.873 0 00-1.937 2.083v5.37h-1.858zM109.384 27.837c-.25 1.643-1.85 2.771-3.898 2.771-2.634 0-4.269-1.764-4.269-4.595 0-2.84 1.644-4.682 4.19-4.682 2.506 0 4.08 1.72 4.08 4.466v.637h-6.394v.112a2.358 2.358 0 002.436 2.564 2.048 2.048 0 002.09-1.273zm-6.282-2.702h4.526a2.177 2.177 0 00-2.22-2.298 2.292 2.292 0 00-2.306 2.298z"/>
-                            <path fill="#000" d="M37.826 8.731a2.64 2.64 0 012.808 2.965c0 1.906-1.03 3.002-2.808 3.002h-2.155V8.731zm-1.228 5.123h1.125a1.876 1.876 0 001.967-2.146 1.881 1.881 0 00-1.967-2.134h-1.125zM41.68 12.444a2.133 2.133 0 114.248 0 2.134 2.134 0 11-4.247 0zm3.334 0c0-.976-.439-1.547-1.208-1.547-.773 0-1.207.571-1.207 1.547 0 .984.434 1.55 1.207 1.55.77 0 1.208-.57 1.208-1.55zM51.573 14.698h-.922l-.93-3.317h-.07l-.927 3.317h-.913l-1.242-4.503h.902l.806 3.436h.067l.926-3.436h.852l.926 3.436h.07l.803-3.436h.889zM53.854 10.195h.855v.715h.066a1.348 1.348 0 011.344-.802 1.465 1.465 0 011.559 1.675v2.915h-.889v-2.692c0-.724-.314-1.084-.972-1.084a1.033 1.033 0 00-1.075 1.141v2.635h-.888zM59.094 8.437h.888v6.261h-.888zM61.218 12.444a2.133 2.133 0 114.247 0 2.134 2.134 0 11-4.247 0zm3.333 0c0-.976-.439-1.547-1.208-1.547-.773 0-1.207.571-1.207 1.547 0 .984.434 1.55 1.207 1.55.77 0 1.208-.57 1.208-1.55zM66.4 13.424c0-.81.604-1.278 1.676-1.344l1.22-.07v-.389c0-.476-.315-.744-.922-.744-.497 0-.84.182-.939.5h-.86c.09-.773.818-1.27 1.84-1.27 1.128 0 1.765.563 1.765 1.514v3.077h-.855v-.633h-.07a1.515 1.515 0 01-1.353.707 1.36 1.36 0 01-1.501-1.348zm2.895-.384v-.377l-1.1.07c-.62.042-.9.253-.9.65 0 .405.351.64.834.64a1.062 1.062 0 001.166-.983zM71.348 12.444c0-1.423.732-2.324 1.87-2.324a1.484 1.484 0 011.38.79h.067V8.437h.888v6.261h-.851v-.71h-.07a1.563 1.563 0 01-1.415.785c-1.145 0-1.869-.901-1.869-2.329zm.918 0c0 .955.45 1.53 1.203 1.53.75 0 1.212-.583 1.212-1.526 0-.938-.468-1.53-1.212-1.53-.748 0-1.203.58-1.203 1.526zM79.23 12.444a2.133 2.133 0 114.247 0 2.134 2.134 0 11-4.247 0zm3.333 0c0-.976-.438-1.547-1.208-1.547-.772 0-1.207.571-1.207 1.547 0 .984.435 1.55 1.207 1.55.77 0 1.208-.57 1.208-1.55zM84.67 10.195h.855v.715h.066a1.348 1.348 0 011.344-.802 1.465 1.465 0 011.559 1.675v2.915h-.889v-2.692c0-.724-.314-1.084-.972-1.084a1.033 1.033 0 00-1.075 1.141v2.635h-.889zM93.515 9.074v1.141h.976v.749h-.976v2.315c0 .472.195.678.637.678a2.967 2.967 0 00.339-.021v.74a2.916 2.916 0 01-.484.046c-.988 0-1.381-.348-1.381-1.216v-2.542h-.715v-.749h.715V9.074zM95.705 8.437h.88v2.481h.07a1.386 1.386 0 011.374-.806 1.483 1.483 0 011.55 1.679v2.907h-.889V12.01c0-.72-.335-1.084-.963-1.084a1.052 1.052 0 00-1.134 1.142v2.63h-.888zM104.761 13.482a1.823 1.823 0 01-1.951 1.303 2.047 2.047 0 01-2.08-2.325 2.077 2.077 0 012.076-2.352c1.253 0 2.009.856 2.009 2.27v.31h-3.18v.05a1.19 1.19 0 001.2 1.29 1.08 1.08 0 001.07-.546zm-3.126-1.451h2.275a1.086 1.086 0 00-1.109-1.167 1.152 1.152 0 00-1.166 1.167z"/>
-                        </svg>
-                    </a>
-                    <p class="cta-note">Requires iOS 17.0 or later</p>
-                </div>
-            </div>
-        </section>
-
         <!-- FAQ Section -->
         <section id="faq" class="faq-section" aria-labelledby="faq-heading">
             <div class="container">
@@ -481,7 +654,22 @@
 
                     <details class="faq-item">
                         <summary>How do currency conversions work?</summary>
-                        <p>Currency rates are updated daily when you have an internet connection. The app automatically detects your locale to set default currencies. Once rates are downloaded, they're cached so you can convert currencies offline using the last known rates.</p>
+                        <p>Currency rates refresh every six hours when you have an internet connection — the app, your widgets, and the Apple Watch all get updated automatically. The app detects your locale to set default currencies. Once rates are downloaded, they're cached so you can convert currencies offline using the last known values.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Does Flip Unit work on Apple Watch?</summary>
+                        <p>Yes. There's a native Apple Watch app with all 12 categories, plus 12 circular complications you can add to any watch face for one-tap access. Currency rates sync automatically from your iPhone, so the Watch never has to fetch them on its own.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What widgets are available?</summary>
+                        <p>Five widgets across three sizes: a single-category launcher, a four-pack launcher, a six-pack launcher, plus a live currency widget. They work on both the Home Screen and the Lock Screen, and each one is independently configurable.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Do I need to open the app for widget rates to update?</summary>
+                        <p>No. Currency rates refresh automatically in the background, so widgets stay current without you ever opening the app. The Apple Watch gets fresh rates pushed from your iPhone the same way.</p>
                     </details>
 
                     <details class="faq-item">
@@ -506,12 +694,17 @@
 
                     <details class="faq-item">
                         <summary>Does the app work offline?</summary>
-                        <p>Yes! All conversions work completely offline. Currency conversions use cached exchange rates from your last online update. All other categories (Distance, Weight, Area, Temperature, Cooking) work offline without any limitations.</p>
+                        <p>Yes. All 12 categories work completely offline — Distance, Weight, Volume, Area, Temperature, Pressure, Speed, Power, Data, Fuel, Cooking, and Currency. Currency uses cached exchange rates from the last online update; everything else works without any network at all.</p>
                     </details>
 
                     <details class="faq-item">
                         <summary>How many currencies are supported?</summary>
-                        <p>Flip Unit supports 162+ world currencies with exchange rates provided by ExchangeRate-API. Rates are updated daily when you're connected to the internet.</p>
+                        <p>Flip Unit supports 162+ world currencies with exchange rates provided by ExchangeRate-API. Rates refresh every six hours when you're connected to the internet.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What iOS and watchOS versions do I need?</summary>
+                        <p>iOS 17.0 or later for the iPhone app, iOS 18.0 or later for widgets, and watchOS 10.6 or later for the Apple Watch app.</p>
                     </details>
 
                     <details class="faq-item">
@@ -533,6 +726,25 @@
                         <summary>Is there an Android version?</summary>
                         <p>Flip Unit is currently available only for iOS (iPhone). There are no plans for an Android version at this time.</p>
                     </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download CTA Section -->
+        <section id="download" class="download-cta" aria-labelledby="download-heading">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="download-heading">Ready to convert smarter?</h2>
+                    <p>Download Flip Unit free on the App Store. No subscriptions, no hidden costs.</p>
+                    <a href="https://apps.apple.com/app/id6757921823" class="app-store-badge" aria-label="Download Flip Unit on the App Store">
+                        <svg viewBox="0 0 120 40" aria-hidden="true">
+                            <rect width="120" height="40" rx="6" fill="#fff"/>
+                            <path fill="#000" d="M24.769 20.3a4.949 4.949 0 012.356-4.151 5.066 5.066 0 00-3.99-2.158c-1.68-.176-3.308 1.005-4.164 1.005-.872 0-2.19-.988-3.608-.958a5.315 5.315 0 00-4.473 2.728c-1.934 3.348-.491 8.269 1.361 10.976.927 1.325 2.01 2.805 3.428 2.753 1.387-.058 1.905-.885 3.58-.885 1.658 0 2.144.885 3.591.852 1.489-.025 2.426-1.332 3.32-2.67a10.962 10.962 0 001.52-3.092 4.782 4.782 0 01-2.92-4.4zM22.037 12.21a4.872 4.872 0 001.115-3.49 4.957 4.957 0 00-3.208 1.66 4.636 4.636 0 00-1.144 3.36 4.1 4.1 0 003.237-1.53z"/>
+                            <path fill="#000" d="M42.302 27.14h-4.733l-1.137 3.356h-2.005l4.484-12.418h2.083l4.483 12.418h-2.039zm-4.243-1.55h3.752l-1.85-5.446h-.051zM55.16 25.97c0 2.813-1.506 4.62-3.779 4.62a3.07 3.07 0 01-2.848-1.583h-.043v4.484h-1.86V21.442h1.8v1.506h.034a3.212 3.212 0 012.883-1.6c2.298 0 3.813 1.816 3.813 4.622zm-1.91 0c0-1.833-.948-3.038-2.393-3.038-1.42 0-2.375 1.23-2.375 3.038 0 1.824.955 3.046 2.375 3.046 1.445 0 2.393-1.197 2.393-3.046zM65.125 25.97c0 2.813-1.506 4.62-3.779 4.62a3.07 3.07 0 01-2.848-1.583h-.043v4.484h-1.859V21.442h1.799v1.506h.034a3.212 3.212 0 012.883-1.6c2.298 0 3.813 1.816 3.813 4.622zm-1.91 0c0-1.833-.948-3.038-2.393-3.038-1.42 0-2.375 1.23-2.375 3.038 0 1.824.955 3.046 2.375 3.046 1.445 0 2.393-1.197 2.393-3.046zM71.71 27.036c.138 1.232 1.335 2.04 2.97 2.04 1.566 0 2.693-.808 2.693-1.919 0-.964-.68-1.54-2.29-1.936l-1.609-.388c-2.28-.55-3.339-1.617-3.339-3.348 0-2.142 1.867-3.614 4.519-3.614 2.624 0 4.423 1.472 4.483 3.614h-1.876c-.112-1.239-1.137-1.987-2.634-1.987s-2.521.757-2.521 1.858c0 .878.654 1.395 2.255 1.79l1.368.336c2.548.603 3.606 1.626 3.606 3.443 0 2.323-1.85 3.778-4.793 3.778-2.754 0-4.614-1.42-4.734-3.667zM83.346 19.3v2.142h1.722v1.472h-1.722v4.991c0 .776.345 1.137 1.102 1.137.204-.004.408-.018.611-.043v1.463a5.104 5.104 0 01-1.032.086c-1.833 0-2.548-.689-2.548-2.444v-5.19h-1.316v-1.472h1.316V19.3zM86.065 25.97c0-2.849 1.678-4.639 4.294-4.639 2.625 0 4.295 1.79 4.295 4.639 0 2.856-1.661 4.638-4.295 4.638-2.633 0-4.294-1.782-4.294-4.638zm6.695 0c0-1.954-.895-3.108-2.401-3.108s-2.4 1.162-2.4 3.108c0 1.962.894 3.106 2.4 3.106s2.401-1.144 2.401-3.106zM96.186 21.442h1.773v1.541h.043a2.16 2.16 0 012.177-1.635 2.866 2.866 0 01.637.069v1.738a2.598 2.598 0 00-.835-.112 1.873 1.873 0 00-1.937 2.083v5.37h-1.858zM109.384 27.837c-.25 1.643-1.85 2.771-3.898 2.771-2.634 0-4.269-1.764-4.269-4.595 0-2.84 1.644-4.682 4.19-4.682 2.506 0 4.08 1.72 4.08 4.466v.637h-6.394v.112a2.358 2.358 0 002.436 2.564 2.048 2.048 0 002.09-1.273zm-6.282-2.702h4.526a2.177 2.177 0 00-2.22-2.298 2.292 2.292 0 00-2.306 2.298z"/>
+                            <path fill="#000" d="M37.826 8.731a2.64 2.64 0 012.808 2.965c0 1.906-1.03 3.002-2.808 3.002h-2.155V8.731zm-1.228 5.123h1.125a1.876 1.876 0 001.967-2.146 1.881 1.881 0 00-1.967-2.134h-1.125zM41.68 12.444a2.133 2.133 0 114.248 0 2.134 2.134 0 11-4.247 0zm3.334 0c0-.976-.439-1.547-1.208-1.547-.773 0-1.207.571-1.207 1.547 0 .984.434 1.55 1.207 1.55.77 0 1.208-.57 1.208-1.55zM51.573 14.698h-.922l-.93-3.317h-.07l-.927 3.317h-.913l-1.242-4.503h.902l.806 3.436h.067l.926-3.436h.852l.926 3.436h.07l.803-3.436h.889zM53.854 10.195h.855v.715h.066a1.348 1.348 0 011.344-.802 1.465 1.465 0 011.559 1.675v2.915h-.889v-2.692c0-.724-.314-1.084-.972-1.084a1.033 1.033 0 00-1.075 1.141v2.635h-.888zM59.094 8.437h.888v6.261h-.888zM61.218 12.444a2.133 2.133 0 114.247 0 2.134 2.134 0 11-4.247 0zm3.333 0c0-.976-.439-1.547-1.208-1.547-.773 0-1.207.571-1.207 1.547 0 .984.434 1.55 1.207 1.55.77 0 1.208-.57 1.208-1.55zM66.4 13.424c0-.81.604-1.278 1.676-1.344l1.22-.07v-.389c0-.476-.315-.744-.922-.744-.497 0-.84.182-.939.5h-.86c.09-.773.818-1.27 1.84-1.27 1.128 0 1.765.563 1.765 1.514v3.077h-.855v-.633h-.07a1.515 1.515 0 01-1.353.707 1.36 1.36 0 01-1.501-1.348zm2.895-.384v-.377l-1.1.07c-.62.042-.9.253-.9.65 0 .405.351.64.834.64a1.062 1.062 0 001.166-.983zM71.348 12.444c0-1.423.732-2.324 1.87-2.324a1.484 1.484 0 011.38.79h.067V8.437h.888v6.261h-.851v-.71h-.07a1.563 1.563 0 01-1.415.785c-1.145 0-1.869-.901-1.869-2.329zm.918 0c0 .955.45 1.53 1.203 1.53.75 0 1.212-.583 1.212-1.526 0-.938-.468-1.53-1.212-1.53-.748 0-1.203.58-1.203 1.526zM79.23 12.444a2.133 2.133 0 114.247 0 2.134 2.134 0 11-4.247 0zm3.333 0c0-.976-.438-1.547-1.208-1.547-.772 0-1.207.571-1.207 1.547 0 .984.435 1.55 1.207 1.55.77 0 1.208-.57 1.208-1.55zM84.67 10.195h.855v.715h.066a1.348 1.348 0 011.344-.802 1.465 1.465 0 011.559 1.675v2.915h-.889v-2.692c0-.724-.314-1.084-.972-1.084a1.033 1.033 0 00-1.075 1.141v2.635h-.889zM93.515 9.074v1.141h.976v.749h-.976v2.315c0 .472.195.678.637.678a2.967 2.967 0 00.339-.021v.74a2.916 2.916 0 01-.484.046c-.988 0-1.381-.348-1.381-1.216v-2.542h-.715v-.749h.715V9.074zM95.705 8.437h.88v2.481h.07a1.386 1.386 0 011.374-.806 1.483 1.483 0 011.55 1.679v2.907h-.889V12.01c0-.72-.335-1.084-.963-1.084a1.052 1.052 0 00-1.134 1.142v2.63h-.888zM104.761 13.482a1.823 1.823 0 01-1.951 1.303 2.047 2.047 0 01-2.08-2.325 2.077 2.077 0 012.076-2.352c1.253 0 2.009.856 2.009 2.27v.31h-3.18v.05a1.19 1.19 0 001.2 1.29 1.08 1.08 0 001.07-.546zm-3.126-1.451h2.275a1.086 1.086 0 00-1.109-1.167 1.152 1.152 0 00-1.166 1.167z"/>
+                        </svg>
+                    </a>
+                    <p class="cta-note">Requires iOS 17.0 or later</p>
                 </div>
             </div>
         </section>
